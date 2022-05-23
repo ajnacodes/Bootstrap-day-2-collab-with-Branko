@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: beige;
+        }
+        
+        .navme {
+            border-bottom: 0px;
+        }
+        
+        .btn {
+            background-color: antiquewhite;
+        }
+        
+        .btn a {
+            text-decoration: none;
+            color: lightseagreen;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="d-flex justify-content-between border border-info rounded-pill bg-info">
+            <img src="https://media.istockphoto.com/photos/postage-stamp-jersey-2012-shows-titanic-100-years-picture-id490553933?s=612x612" width="300px" height="100px" class="rounded float-start rounded-pill" alt="...">
+            <div class="nav navme nav-tabs m" id="nav-tab" role="tablist">
+                <button class="nav-link text-danger bg-success fw-bold fs-4" id="nav-plot-tab" data-bs-toggle="tab" data-bs-target="#nav-plot" type="button" role="tab" aria-controls="nav-plot" aria-selected="true">Plot</button>
+                <button class="nav-link text-warning bg-danger fw-bold fs-4" id="nav-actor-tab" data-bs-toggle="tab" data-bs-target="#nav-actor" type="button" role="tab" aria-controls="nav-actor" aria-selected="false">Actors</button>
+                <button class="nav-link text-success bg-warning me-5 fw-bold fs-4" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+            </div>
+        </nav>
+
+        <div class="tab-content d-flex justify-content-center m-3" id="nav-tabContent">
+            <div class="tab-pane fade show" id="nav-plot" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="card" style="width: 50rem;">
+                    <img src="https://ychef.files.bbci.co.uk/1600x900/p03mtkvn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Titanic is a 1997 American epic romance and disaster film directed, written, produced, and co-edited by James Cameron. Incorporating both historical and fictionalized aspects, it is based on accounts of the sinking of the RMS Titanic,
+                            and stars Leonardo DiCaprio and Kate Winslet as members of different social classes who fall in love aboard the ship during its ill-fated maiden voyage. Also starring are Billy Zane, Kathy Bates, Frances Fisher, Gloria Stuart,
+                            Bernard Hill, Jonathan Hyde, Victor Garber, and Bill Paxton.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-actor" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="d-flex align-items-start me-3">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Leonardo DiCaprio</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Kate Winslet</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Billy Zane</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        Kathy Bates</button>
+                        <button class="nav-link" id="v-pills-phone-tab" data-bs-toggle="pill" data-bs-target="#v-pills-phone" type="button" role="tab" aria-controls="v-pills-phone" aria-selected="false">
+                        Bill Paxton</button>
+                        <button class="nav-link" id="v-pills-handy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-handy" type="button" role="tab" aria-controls="v-pills-handy" aria-selected="false">
+                        Victor Garber</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="card" style="width: 30rem;">
+                                <img src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQTZE6ZxVumFL3ga6AiETDuiRobav4wFmLjcBf9D1D85Q_B2zk5wlNlw-UrcI4f" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Born in Los Angeles, DiCaprio began his career in the late 1980s by appearing in television commercials. In the early 1990s, he had recurring roles in various television shows, such as the sitcom Parenthood, and had
+                                        his first major film part as author Tobias Wolff in This Boy's Life (1993).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="card" style="width: 30rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Kate_Winslet_Palm_Film_Festival.jpg/800px-Kate_Winslet_Palm_Film_Festival.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Winslet studied drama at the Redroofs Theatre School. Her first screen appearance, at age 15, was in the British television series Dark Season (1991). She made her film debut playing a teenage murderess in Heavenly
+                                        Creatures (1994), and went on to win a BAFTA Award for playing Marianne Dashwood in Sense and Sensibility (1995).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="card" style="width: 30rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Billy_Zane_Photo_Op_GalaxyCon_Raleigh_2019.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">William George Zane Jr. (born February 24, 1966) is an American actor, producer, and artist. His breakthrough role was in the 1989 Australian film Dead Calm, a performance that earned him a nomination for the Chicago
+                                        Film Critics Association Award for Most Promising Actor. He has since appeared in numerous films and television series, notably playing Caledon Hockley in the epic romance disaster film Titanic (1997), for which
+                                        he was nominated for a Screen Actors Guild Award.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="card" style="width: 30rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/SDCC_2015_-_Kathy_Bates_%2819157137724%29_%28cropped%29.jpg/800px-SDCC_2015_-_Kathy_Bates_%2819157137724%29_%28cropped%29.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Born in Memphis, Tennessee, she studied theater at the Southern Methodist University before moving to New York City to pursue an acting career. She landed minor stage roles before being cast in her first on screen role
+                                        in Taking Off (1971). Her first Off-Broadway stage performance was in the 1976 production of Vanities. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-phone" role="tabpanel" aria-labelledby="v-pills-phone-tab">
+                            <div class="card" style="width: 30rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bill_Paxton_by_Gage_Skidmore.jpg/800px-Bill_Paxton_by_Gage_Skidmore.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">William Paxton (May 17, 1955 – February 25, 2017) was an American actor, filmmaker, and musician. He appeared in films such as Weird Science (1985), Near Dark (1987), Aliens (1986), Tombstone (1993), True Lies (1994),
+                                        Apollo 13 (1995), Twister (1996), Titanic (1997) and A Simple Plan (1998).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-handy" role="tabpanel" aria-labelledby="v-pills-handy-tab">
+                            <div class="card" style="width: 30rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Victor_Garber_2017.jpg/800px-Victor_Garber_2017.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Victor Joseph Garber (born March 16, 1949) is a Canadian actor and singer.[1] Known for his work in film, television, and theatre, he has been nominated for three Gemini Awards, four Tony Awards, and six Primetime Emmy
+                                        Awards. He has also been nominated for three Screen Actors Guild Awards along with the cast of the critically acclaimed films Titanic (1997), Milk (2008), and Argo (2012), winning for the latter.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="list-group d-flex justify-content-center btn-align">
+                        <button type="button" class="list-group-item list-group-item-action btn"><a href="https://www.rottentomatoes.com/m/titanic" target="_blank">Rottentomatoes</a></button>
+                        <button type="button" class="list-group-item list-group-item-action btn"><a href="https://www.languages.ac.nz/movie-review-titanic/" target="_blank">Languages</a></button>
+                        <button type="button" class="list-group-item list-group-item-action btn"><a href="https://www.imdb.com/title/tt0120338/reviews" target="_blank">ImdB</a></button>
+                        <button type="button" class="list-group-item list-group-item-action btn"><a href="https://www.commonsensemedia.org/movie-reviews/titanic" target="_blank">Commonsense media</a></button>
+                        <button type="button" class="list-group-item list-group-item-action btn"><a href="https://www.reelviews.net/reelviews/titanic" target="_blank">Reelviews</a></button>
+                        <button type="button" class="list-group-item list-group-item-action btn"><a href="https://deepfocusreview.com/reviews/titanic/" target="_blank">Deep Focus Review</a></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-circle">
+                <div class="carousel-item active">
+                    <img src="https://static.kino.de/wp-content/uploads/2021/06/imago0094775023h-rcm950x0u.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item rounded-circle">
+                    <img src="https://static.kino.de/wp-content/uploads/2021/07/imago0107100683h-rcm950x0u.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item rounded-circle">
+                    <img src="https://static.kino.de/wp-content/uploads/2021/07/imago0094754956h-rcm950x0u.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
